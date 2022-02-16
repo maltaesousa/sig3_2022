@@ -1,0 +1,64 @@
+/* Ce fichier permet de définir une zone pour quelle s'affiche sous forme de grille */
+.grid1 {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 3fr 1fr 5fr;
+    grid-template-areas:
+        "map couche_fond"
+        "map pfp1"
+        "map pfp2"
+        "map pfp3"
+        "map station"
+        "map add_station"
+        "map export_station"
+        "map grid_vide"
+    ;
+}
+
+.grid_map {
+    grid-area: map;
+}
+
+.grid_couche_fond {
+    grid-area: couche_fond;
+    margin: auto;
+}
+
+.grid_pfp1 {
+    grid-area: pfp1;
+    margin: auto;
+    margin-left: 50px;
+}
+
+.grid_pfp2 {
+    grid-area: pfp2;
+    margin: auto;
+    margin-left: 50px;
+}
+
+.grid_pfp3 {
+    grid-area: pfp3;
+    margin: auto;
+    margin-left: 50px;
+}
+
+.grid_station {
+    grid-area: station;
+    margin: auto;
+    margin-left: 50px;
+}
+
+.grid_add_station {
+    grid-area: add_station;
+    margin: auto;
+}
+
+.grid_export_station {
+    grid-area: export_station;
+    margin: auto;
+}
+
+.grid_vide {
+    grid-area: grid_vide;
+}

@@ -1,0 +1,295 @@
+<!-- ########################################################################################
+     ****************************************************************************************
+
+     PROJET DE SYSINFGEO3 - SEMESTRE D'AUTOMNE 2021-2022 - HEIG-VD
+     GROUPE: PELLAUD Pierre & SMOLIK Marin
+     PROFESSEURS: MALTA E SOUSA Stéphane & INGENSAND Jens
+     VERSION: BNR_V1.3 html
+     DATE: le 16 Janvier 2022
+     
+     ****************************************************************************************
+     #####################################################################################-->
+
+
+<!-- ****************************************************************************************
+     INTRODUCTION
+     ****************************************************************************************
+     Notre projet consite à créer un jeu appelé BNR (Bataille Navale Revisitée).
+     Ce dernier est réalisé dans le cadre du cours de Systèmes d'information géographique 3
+     et plus précisemment sur les thématiques de webmapping et base de données.
+     
+     BNR est un jeu solo qui reprend les règles de la bataille navale classique
+     mais joué sur une carte d'un pays à la place d'un plateau quadrillé.
+     Les bateaux sont remplacés par des "bases" (départements, régions, états, ...) dont 
+     la taille peut varier. L'objectif est de détruire toutes les bases ennemies de 
+     notre adversaire (IA) avant lui. Le principe du tour par tour est conservé.
+
+     Nous avons diviser le jeu en trois planches de travail qui représentent les trois pages
+     web que le joueurs va rencontrer:
+       1. La page d'accueil;
+       2. La page de séléction des bases et mise en place;
+       3. La page de jeu.
+     
+     Ce document est la page 1 du site web correspondant à la planche 2.
+     Se reférer à la maquette powerpoint ci-jointe.
+     -->
+
+<!-- Déclaration !DOCTYPE: Information du type de document. -->
+<!DOCTYPE html>
+
+<!-- Balise HTML: Racine du document HMTL avec l'attribut de la langue pour déclarer la langue de la page web. -->
+<html lang="fr">
+
+<!-- ****************************************************************************************
+     HEAD
+     *************************************************************************************-->
+
+<!-- Balise HEAD: Entête du document html. Contient toutes informations non visibles par l'utilisateur. -->
+
+<head>
+    <!-- Balise TITLE: Identifie le contenu d'un document et est affiché dans l'onglet web de l'utilisateur. -->
+    <title> BNR - Bataille Navale Revisitée </title>
+
+    <!-- Balise META: Spécification des métadonnées. Définition d'une propriété et lui assigne une valeur. -->
+    <!-- Spécifie le codage des caractères pour le documents HTML. -->
+    <meta charset="utf-8">
+    <!-- Configure la fenêtre d'affichage pour le site web: 
+           width=device-width définit la largeur de la page afin qu'elle s'adapte à l'écran de l'appareil utilisé;
+           initial-scale=1.0 détermine le niveau du zoom lors du premier chargement de la page. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Balise LINK: Relation entre le document actuel et des resources externes. -->
+    <!-- Importe une icône pour l'onglet web. -->
+    <link rel="icon" href="img/BNR.png" />
+    <!-- Importe une feuille de style BOOTSTRAP. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Importe une feuille de style JS_DELIVR. -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css" type="text/css">
+
+    <!-- Balise STYLE: Définit des informations de style CSS pour le document. -->
+    <style>
+        #map {
+            height: 800px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<!-- ****************************************************************************************
+     BODY
+     *************************************************************************************-->
+
+<!-- Balise BODY: Corps du document html. Contient tout le contenu du document html. -->
+
+<body>
+    <div class="container">
+        <!-- Titre général du Site web   -->
+        <h1>BNR</h1>
+
+        <!-- La carte principale de choix des bases (planche 2) -->
+        <div id="map" class="map">
+        </div>
+
+        <!-- Bouton pour aller à la partie bataille (planche 3) -->
+        <div class="container">
+            <h2>Phase suivante :</h2>
+            <button type="button" id="GO" onclick="goGogo(this)" class="btn btn-warning" onClick=> Go !</button>
+        </div>
+
+        <!-- Descriptif du projet sous la carte -->
+        <p>
+        <ul>
+            <li>Projet "Bataille Navalle Revisitée" (BNR)</li>
+            <li>SIG3 - HEIG-VD - Pierre Pellaud et Marin Smolik - Janvier 2022</li>
+        </ul>
+        </p>
+    </div>
+
+    <!-- ***********************************************************************************
+         JavaScript
+         *********************************************************************************** -->
+
+    <!-- Import des librairies externes -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+
+    <!-- Import des fichiers annexes au projet -->
+    <script src="Fichier_JS_lies/BNR_symbologie.js"> </script>
+
+    <!-- JS du projet -->
+    <script>
+        // ----------------------------------- 01 - Mise en place de la carte --------------------------
+
+        // Création de vectorLayer carte "map"
+        const vectorLayer = new ol.layer.Vector({});
+
+        // Définition de la source des données vectorielles
+        const geojsonSource = new ol.source.Vector({
+            format: new ol.format.GeoJSON(),
+            url: 'departements_2.geojson'
+        });
+
+        // Définition de la source des données raster pour la carte "map"
+        // On utilise OSM car on a une couche au niveau mondial
+        let OSMlayer = new ol.layer.Tile({
+            name: "OSM",
+            visible: true,
+            source: new ol.source.OSM()
+        });
+
+        // Création de layers : couche raster et couche vecteur
+        let layers = [OSMlayer, vectorLayer];
+
+        // Création de la position de départ (coordonnées et niveau de zoom) pour la carte "map"
+        const view = new ol.View({
+            center: ol.proj.fromLonLat([1.64718, 47.0]),
+            zoom: 6
+        });
+
+        // Chargement des éléments dans la carte "map"
+        const map = new ol.Map({
+            target: "map",
+            layers,
+            view
+        });
+
+        // Chargement de la source de donnée geojsonSource
+        vectorLayer.setSource(geojsonSource);
+
+        // ----------------------------------- 02 - Partie jeu ------------------------------------
+        // ----------------------------------- 02.1 - Sélection des bases du J1 -------------------
+
+        // Initialisation de la liste des bases selectionées par "singleclick"
+        let select = [];
+
+        // Initialisation de la liste des bases voisines à la selection 
+        let listeBasesVoisines = [];
+
+        // Action : avec un click on selectionne un departement
+        map.on('singleclick', function (e) {
+            map.forEachFeatureAtPixel(e.pixel, function (f) {
+                const selIndex = select.indexOf(f);
+
+                if (selIndex < 0) {
+                    select.push(f);
+                    f.setStyle(
+                        highlightStyle); // Applique le style "highlightStyle" aux départements selectionnés
+                    let selectDep = f;
+                    getDataBuffer(selectDep); // Applique le buffer (cf. fonction)
+
+                } else {
+                    select.splice(selIndex, 1);
+                    f.setStyle(
+                        undefined); // Applique le style par défaut aux départements déselectionnés
+                }
+            });
+        });
+
+        // --------------------------- 02.2 - Aide au placement des bases ----------------------------
+
+        // Initialisation de la liste des bases formatées renvoyées par le serveur postgres 
+        let listBufferDep = [];
+
+        // Fonction qui obtient les départements voisins autour d'un département auprès du serveur Postgres
+        function getDataBuffer(selectDep) {
+            let numCodeInsee = selectDep.getProperties().code_insee; // Numéro du département selectionné
+            let urlBuffer = 'http://localhost:8080/?' +
+                numCodeInsee; // URL : création de l'URL contenant le numéro du département
+
+            // Connection avec le serveur 8080 postgres
+            $.ajax({
+                url: urlBuffer,
+                type: 'GET',
+                success: function (dataFromServer) {
+                    // Ajout des départements mitoyens dans "listBufferDep"
+                    for (let i = 0; i < dataFromServer.length; i++) {
+                        listBufferDep.push(dataFromServer[i][0]);
+                    }
+
+                    // Applique une symbologie aux departements mitoyens
+                    for (let i = 0; i < listBufferDep.length; i++) {
+                        let selectNon = 1;
+                        let depCourrant = listBufferDep[i];
+
+                        // Vérifie que le département n'est pas déjà selectionné afin d'éviter des conflits de couleurs
+                        for (let i = 0; i < select.length; i++) {
+                            if (select[i].getProperties().code_insee == depCourrant) {
+                                selectNon = 0;
+                            }
+                        }
+
+                        // Applique la symbologie "bufferStyle" aux départements voisins
+                        vectorLayer.getSource().getFeatures().map(feature => {
+                            region_courante = feature.getProperties().code_insee;
+                            if (depCourrant == region_courante && selectNon == 1) {
+                                feature.setStyle(bufferStyle);
+                            }
+                        });
+                    }
+                },
+                error: function (error) {
+                    console.error('Erreur serveur postgres :', error);
+                }
+            });
+        }
+
+        // ----------------------------------- 02.3 - Finalisation des bases J1 -------------------
+
+        // Fonction goGogo (sur click du bouton Go !)
+        function goGogo(element) {
+            // Initialise les bases J1
+            let listBasesJ1 = [];
+
+            // Compilation de la liste des bases J1 sélectionnées
+            for (let i = 0; i < select.length; i++) {
+                listBasesJ1.push(select[i].getProperties().code_insee);
+            }
+
+            // Envoie les données dans le serveur Python (port 8000)
+            postData(listBasesJ1);
+        }
+
+        // ----------------------------------- 02.4 - Envoie des bases J1 au serveur -------------------
+
+        // URL du server de données python
+        let url = 'http://localhost:8000';
+
+        // Fonction pour convertir la liste des bases J1 en JSON
+        function baseToJson(listBasesJ1) {
+            let rawDataBasesJ1 = "{";
+            for (var i = 0; i < listBasesJ1.length; i++) {
+                chaineChars = ('"Base' + String(i) + '"' + ':"' + listBasesJ1[i] + '"');
+                rawDataBasesJ1 = rawDataBasesJ1 + chaineChars + ",";
+            }
+            // Enlève la virgule de trop à la fin du dernier élément
+            rawDataBasesJ1 = rawDataBasesJ1.substring(0, rawDataBasesJ1.length - 1);
+            rawDataBasesJ1 = rawDataBasesJ1 + "}";
+            return rawDataBasesJ1;
+        }
+
+        // Fonction pour poster sur le serveur le JSON des bases J1
+        function postData(listBasesJ1) {
+            let rawData = baseToJson(listBasesJ1);
+
+            // Connection avec le serveur 8000 python
+            $.ajax({
+                url: url,
+                type: 'POST',
+                contentType: "application/json",
+                data: rawData,
+                dataType: "json",
+                success: function (response) {
+                    document.location.href = 'BNR_P2_VF.html';
+                },
+                error: function (error) {
+                    console.error('Erreur serveur python :', error);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

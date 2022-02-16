@@ -1,0 +1,54 @@
+h1 {
+    font-size: 100px;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 25px;
+}
+
+.banniere {
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banniere_leica {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../img/Banniere_Leica.jpg");
+}
+
+.banniere_trimble {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../img/Banniere_Trimble.jpg");
+}
+
+.text_banniere {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.swap_button {
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+.swap_img {
+    width: 25px;
+    height: 25px;
+}
+
+.list-scroll {
+    overflow-y: scroll;
+    height: 500px;
+}

@@ -1,0 +1,2098 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        "C:\Program Files (x86)\FME\fme.exe" E:\Documents\HES\SIG\SIG3\projet\viseposs\fme\ITF_CH_to_GEOJSON.fmw
+#              --DestDataset_GEOJSON "C:\Users\jerem\Downloads\viseposs\data\pfp1.geojson"
+#              --DestDataset_GEOJSON_5 "C:\Users\jerem\Downloads\viseposs\data\pfp2.geojson"
+#              --DestDataset_GEOJSON_4 "C:\Users\jerem\Downloads\viseposs\data\pfp3.geojson"
+#              --SourceDataset_ch.ehi.fme.Main_3 """"""E:\Documents\HES\SIG\SIG3\projet\viseposs\fme\itf\0074be070300040100001.itf"" ""E:\Documents\HES\SIG\SIG3\projet\viseposs\fme\itf\0074be071300040100001.itf""""""
+#    
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="5676.99 2668.17"
+#!   DOC_TOP_LEFT="1677.43 -18095.4"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="21321"
+#!   FME_DOCUMENT_GUID="4209fa5b-8fe5-42f5-8fe4-3e6c0590d19f"
+#!   FME_DOCUMENT_PRIORGUID="671b3253-3c59-4e0c-b5d8-2644efb6c0ea,bef40fa7-c1d5-4ce8-84da-fb177bb1e332,3d1ad857-5c8c-47a7-b945-f71f498c354f,70d2369b-3b0e-4f41-a58c-aa951598c516,fee28902-ae62-4076-9cd5-3a5e6db98cbc,cfd2d434-e292-462d-bf3c-3a3735846b76,3c4fd859-3e6d-4ee9-8937-f531356b1166,73496859-fe39-405d-9606-3cc50c854973"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="windows-1252"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2021.0.2.0 (20210429 - Build 21321 - WIN32)"
+#!   LAST_SAVE_DATE="2022-01-20T15:50:49"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="38"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-2583.36 -15083.5"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="60"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="ch.ehi.fme.Main"
+#!   DATASET="$(SourceDataset_ch.ehi.fme.Main_3)"
+#!   KEYWORD="ch.ehi.fme.Main_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename xtf_char(50) fme_color xtf_char(50) fme_dataset xtf_char(50) fme_feature_type xtf_char(50) fme_fill_color xtf_char(50) fme_geometry xtf_char(50) fme_primary_axis xtf_real64 fme_rotation xtf_real64 fme_secondary_axis xtf_real64 fme_start_angle xtf_real64 fme_sweep_angle xtf_real64 fme_text_size xtf_real64 fme_text_string xtf_char(50) fme_type xtf_char(50) multi_reader_full_id xtf_int32 multi_reader_id xtf_int32 multi_reader_keyword xtf_char(50) multi_reader_type xtf_char(50) xtf_basket xtf_char(200) xtf_class xtf_char(255) xtf_consistency xtf_char(12) xtf_geomattr xtf_char(255) xtf_operation xtf_char(6)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="21321"
+#!   COORDSYS="CH1903Plus_1.LV95/01"
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! />
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="GEOJSON"
+#!   DATASET="$(DestDataset_GEOJSON)"
+#!   KEYWORD="GEOJSON_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="600"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename string fme_color string fme_dataset string fme_feature_type string fme_fill_color string fme_geometry string fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string string fme_type string"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="21321"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="json file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/geo+json ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the GeoJSON file(s) or type the GeoJSON URL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the GeoJSON file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="GEOJSON"
+#!   DATASET="$(DestDataset_GEOJSON_5)"
+#!   KEYWORD="GEOJSON_2"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="600"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename string fme_color string fme_dataset string fme_feature_type string fme_fill_color string fme_geometry string fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string string fme_type string"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="21321"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="json file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/geo+json ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the GeoJSON file(s) or type the GeoJSON URL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the GeoJSON file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="GEOJSON"
+#!   DATASET="$(DestDataset_GEOJSON_4)"
+#!   KEYWORD="GEOJSON_3"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="600"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename string fme_color string fme_dataset string fme_feature_type string fme_fill_color string fme_geometry string fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string string fme_type string"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="21321"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="json file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/geo+json ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the GeoJSON file(s) or type the GeoJSON URL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the GeoJSON file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_decimal(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="GEOJSON"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_coord"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_coord"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_surface"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_area"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_area"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_area"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_area"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_surface"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_polyline"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_polyline"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_surface"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_surface"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xtf_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ch.ehi.fme.Main"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_ellipse"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_rectangle"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_rounded_rectangle"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_line"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_line"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="GEOJSON"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="pfp1"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="43"
+#!   FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
+#!   POSITION="6832.4149144749608 -15683.627338587841"
+#!   BOUNDING_RECT="6832.4149144749608 -15683.627338587841 430 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="false"
+#!   KEYWORD="GEOJSON_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="IdentDN" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Numero" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GeomAlt" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecPlan" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabPlan" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecAlt" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabAlt" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Accessibilite" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Signe" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Type" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="pfp2"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="47"
+#!   FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
+#!   POSITION="6832.4149144749608 -16503.127338587841"
+#!   BOUNDING_RECT="6832.4149144749608 -16503.127338587841 430 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="false"
+#!   KEYWORD="GEOJSON_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="IdentDN" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Numero" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GeomAlt" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecPlan" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabPlan" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecAlt" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabAlt" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Accessibilite" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Signe" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Type" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="pfp3"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="52"
+#!   FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
+#!   POSITION="6832.4149144749608 -17417.866386216414"
+#!   BOUNDING_RECT="6832.4149144749608 -17417.866386216414 430 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="false"
+#!   KEYWORD="GEOJSON_3"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="IdentDN" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Numero" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GeomAlt" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecPlan" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabPlan" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecAlt" ATTR_TYPE="float" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabAlt" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Accessibilite" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Signe" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Type" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="MD01MOCH24MN95F.Points_fixesCategorie2.PFP2"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="97"
+#!   FEAT_GEOMTYPE="xtf_coord"
+#!   POSITION="1771.4250410345746 -16685.788777218775"
+#!   BOUNDING_RECT="1771.4250410345746 -16685.788777218775 1067.0999999999999 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="ch.ehi.fme.Main_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Origine" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="IdentDN" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Numero" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GeomAlt" ATTR_TYPE="xtf_decimal(8,3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecPlan" ATTR_TYPE="xtf_decimal(5,1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabPlan" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecAlt" ATTR_TYPE="xtf_decimal(5,1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabAlt" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Accessibilite" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Signe" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="MD01MOCH24MN95F.Points_fixesCategorie1.PFP1"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="107"
+#!   FEAT_GEOMTYPE="xtf_coord"
+#!   POSITION="1772.4250410345746 -16399.788777218775"
+#!   BOUNDING_RECT="1772.4250410345746 -16399.788777218775 1066.0999999999999 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="ch.ehi.fme.Main_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Origine" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="IdentDN" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Numero" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GeomAlt" ATTR_TYPE="xtf_decimal(8,3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecPlan" ATTR_TYPE="xtf_decimal(5,1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabPlan" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecAlt" ATTR_TYPE="xtf_decimal(5,1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabAlt" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Accessibilite" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Signe" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="MD01MOCH24MN95F.Points_fixesCategorie1.PFA1"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="138"
+#!   FEAT_GEOMTYPE="xtf_coord"
+#!   POSITION="1770.4250410345746 -16256.788777218775"
+#!   BOUNDING_RECT="1770.4250410345746 -16256.788777218775 1068.0999999999999 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="ch.ehi.fme.Main_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Origine" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="IdentDN" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Numero" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GeomAlt" ATTR_TYPE="xtf_decimal(8,3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecPlan" ATTR_TYPE="xtf_decimal(5,1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabPlan" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecAlt" ATTR_TYPE="xtf_decimal(5,1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabAlt" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="MD01MOCH24MN95F.Points_fixesCategorie3.PFA3"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="179"
+#!   FEAT_GEOMTYPE="xtf_coord"
+#!   POSITION="1769.4250410345746 -16828.788777218775"
+#!   BOUNDING_RECT="1769.4250410345746 -16828.788777218775 1069.0999999999999 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="ch.ehi.fme.Main_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Origine" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="IdentDN" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Numero" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GeomAlt" ATTR_TYPE="xtf_decimal(8,3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecPlan" ATTR_TYPE="xtf_decimal(5,1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabPlan" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecAlt" ATTR_TYPE="xtf_decimal(5,1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabAlt" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="MD01MOCH24MN95F.Points_fixesCategorie3.PFP3"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="201"
+#!   FEAT_GEOMTYPE="xtf_coord"
+#!   POSITION="1771.4250410345746 -16971.788777218775"
+#!   BOUNDING_RECT="1771.4250410345746 -16971.788777218775 1067.0999999999999 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="ch.ehi.fme.Main_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Origine" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="IdentDN" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Numero" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GeomAlt" ATTR_TYPE="xtf_decimal(8,3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecPlan" ATTR_TYPE="xtf_decimal(5,1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabPlan" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecAlt" ATTR_TYPE="xtf_decimal(5,1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabAlt" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Signe" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Fiche" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="MD01MOCH24MN95F.Points_fixesCategorie2.PFA2"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="205"
+#!   FEAT_GEOMTYPE="xtf_coord"
+#!   POSITION="1769.4250410345746 -16542.788777218775"
+#!   BOUNDING_RECT="1769.4250410345746 -16542.788777218775 1069.0999999999999 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="ch.ehi.fme.Main_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="xtf_id" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Origine" ATTR_TYPE="xtf_char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="IdentDN" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Numero" ATTR_TYPE="xtf_char(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GeomAlt" ATTR_TYPE="xtf_decimal(8,3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecPlan" ATTR_TYPE="xtf_decimal(5,1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabPlan" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrecAlt" ATTR_TYPE="xtf_decimal(5,1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FiabAlt" ATTR_TYPE="xtf_char(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="ch.ehi.fme.Main_1"
+#!   OVERRIDE="-ch.ehi.fme.Main_1_DATASET"
+#!   DATASET="ch.ehi.fme.Main_1/0074be071300040100001.itf&quot;&quot;"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="GEOJSON_1"
+#!   OVERRIDE="-GEOJSON_1_DATASET"
+#!   DATASET="GEOJSON_1/pfp1.geojson"
+#! />
+#! <DATASET
+#!   NAME="GEOJSON_2"
+#!   OVERRIDE="-GEOJSON_2_DATASET"
+#!   DATASET="GEOJSON_2/pfp2.geojson"
+#! />
+#! <DATASET
+#!   NAME="GEOJSON_3"
+#!   OVERRIDE="-GEOJSON_3_DATASET"
+#!   DATASET="GEOJSON_3/pfp3.geojson"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_GEOJSON GeoJSON_Files(*.json)|*.json|All_Files|* Destination GeoJSON File:"
+#!   DEFAULT_VALUE="C:\Users\jerem\Downloads\viseposs\data\pfp1.geojson"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_GEOJSON_5 GeoJSON_Files(*.json)|*.json|All_Files|* Destination GeoJSON File:"
+#!   DEFAULT_VALUE="C:\Users\jerem\Downloads\viseposs\data\pfp2.geojson"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_GEOJSON_4 GeoJSON_Files(*.json)|*.json|All_Files|* Destination GeoJSON File:"
+#!   DEFAULT_VALUE="C:\Users\jerem\Downloads\viseposs\data\pfp3.geojson"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_3 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|*.* Original INTERLIS 2 File:"
+#!   DEFAULT_VALUE="&quot;&quot;$(FME_MF_DIR)itf\0074be070300040100001.itf&quot; &quot;$(FME_MF_DIR)itf\0074be071300040100001.itf&quot;&quot;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiJDOlxcVXNlcnNcXGplcmVtXFxEb3dubG9hZHNcXHZpc2Vwb3NzXFxkYXRhXFxwZnAxLmdlb2pzb24iLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6Ikdlb0pTT04gRmlsZXMiLCJmaWx0ZXIiOlsiKi5qc29uIl19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9HRU9KU09OIiwicHJvbXB0IjoiRGVzdGluYXRpb24gR2VvSlNPTiBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJ3cml0ZSIsImRlZmF1bHRWYWx1ZSI6IkM6XFxVc2Vyc1xcamVyZW1cXERvd25sb2Fkc1xcdmlzZXBvc3NcXGRhdGFcXHBmcDIuZ2VvanNvbiIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiR2VvSlNPTiBGaWxlcyIsImZpbHRlciI6WyIqLmpzb24iXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBGaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3REYXRhc2V0X0dFT0pTT05fNSIsInByb21wdCI6IkRlc3RpbmF0aW9uIEdlb0pTT04gRmlsZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiJDOlxcVXNlcnNcXGplcmVtXFxEb3dubG9hZHNcXHZpc2Vwb3NzXFxkYXRhXFxwZnAzLmdlb2pzb24iLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6Ikdlb0pTT04gRmlsZXMiLCJmaWx0ZXIiOlsiKi5qc29uIl19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9HRU9KU09OXzQiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBHZW9KU09OIEZpbGU6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6InJlYWQiLCJkZWZhdWx0VmFsdWUiOiJcIlwiJChGTUVfTUZfRElSX1VTRVJUWVBFRClpdGZcXDAwNzRiZTA3MDMwMDA0MDEwMDAwMS5pdGZcIiBcIiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpaXRmXFwwMDc0YmUwNzEzMDAwNDAxMDAwMDEuaXRmXCJcIiIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiSU5URVJMSVMgRmlsZXMiLCJmaWx0ZXIiOlsiKi54dGYiLCIqLnhtbCIsIiouaXRmIiwiKi5pbGkiXX0seyJkZXNjcmlwdGlvbiI6IklOVEVSTElTIDIgRmlsZXMiLCJmaWx0ZXIiOlsiKi54dGYiLCIqLnhtbCJdfSx7ImRlc2NyaXB0aW9uIjoiSU5URVJMSVMgMSBGSUxFUyIsImZpbHRlciI6WyIqLml0ZiJdfSx7ImRlc2NyaXB0aW9uIjoiSU5URVJMSVMgTU9ERUxTIiwiZmlsdGVyIjpbIiouaWxpIl19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9jaC5laGkuZm1lLk1haW5fMyIsInByb21wdCI6Ik9yaWdpbmFsIElOVEVSTElTIDIgRmlsZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOnRydWUsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19"
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="DestDataset_GEOJSON" IS_STAND_ALONE="false" />
+#!     <INFO NAME="DestDataset_GEOJSON_4" IS_STAND_ALONE="false" />
+#!     <INFO NAME="DestDataset_GEOJSON_5" IS_STAND_ALONE="false" />
+#!     <INFO NAME="SourceDataset_ch.ehi.fme.Main_3" IS_STAND_ALONE="false" />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="44"
+#!   NAME="Lecture de l&apos;ITF"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1677.4250410345746 -16128.288777218775"
+#!   ORDER="500000000000005"
+#!   PALETTE_COLOR="Color1"
+#!   BOTTOM_RIGHT="2926.5250410345743 -17096.288777218775"
+#!   BOUNDING_RECT="1677.4250410345746 -16128.288777218775 1249.0999999999997 968"
+#!   STICKY="true"
+#!   COLOUR="0.20784313725490197,0.40784313725490196,0.40784313725490196,1"
+#!   CONTENTS="179 138 107 201 97 205 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="46"
+#!   NAME="Création de l&apos;attribut de type de point"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="3800.9277781666697 -15427.19240896112"
+#!   ORDER="500000000000006"
+#!   PALETTE_COLOR="Color2"
+#!   BOTTOM_RIGHT="4612.5461254612546 -17808.881678299455"
+#!   BOUNDING_RECT="3800.9277781666697 -15427.19240896112 811.61834729458496 2381.6892693383343"
+#!   STICKY="true"
+#!   COLOUR="0.24313725490196078,0.40784313725490196,0.20784313725490197,1"
+#!   CONTENTS="148 144 145 140 142 149 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="48"
+#!   NAME="Gestion des attributs"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="4960.883573571894 -15577.794046921586"
+#!   ORDER="500000000000007"
+#!   PALETTE_COLOR="Color3"
+#!   BOTTOM_RIGHT="5599.6649917376362 -17808.881678299455"
+#!   BOUNDING_RECT="4960.883573571894 -15577.794046921586 638.78141816574225 2231.0876313778681"
+#!   STICKY="true"
+#!   COLOUR="0.60784313725490191,0.46274509803921571,0.20784313725490197,1"
+#!   CONTENTS="45 51 42 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="49"
+#!   NAME="Tri par le nom des PF"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="5873.7201152706457 -15646.122963544087"
+#!   ORDER="500000000000009"
+#!   PALETTE_COLOR="Color5"
+#!   BOTTOM_RIGHT="6465.7201152706457 -17808.881678299455"
+#!   BOUNDING_RECT="5873.7201152706457 -15646.122963544087 592 2162.7587147553677"
+#!   STICKY="true"
+#!   COLOUR="0.21568627450980393,0.52549019607843139,0.33333333333333331,1"
+#!   CONTENTS="34 31 37 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="50"
+#!   NAME="Sortie en geojson"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="6744.4149144749608 -15555.127338587841"
+#!   ORDER="500000000000010"
+#!   PALETTE_COLOR="Color6"
+#!   BOTTOM_RIGHT="7354.4149144749608 -18095.366386216414"
+#!   BOUNDING_RECT="6744.4149144749608 -15555.127338587841 610 2540.2390476285727"
+#!   STICKY="true"
+#!   COLOUR="0.20000000000000001,0.49803921568627452,0.51764705882352946,1"
+#!   CONTENTS="52 43 47 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="140"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="3888.9277781666697 -15537.19240896112"
+#!   BOUNDING_RECT="3888.9277781666697 -15537.19240896112 454 71"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21321"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Origine" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; Type SET_TO PFA1"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="142"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="3888.9277781666697 -15726.995517694004"
+#!   BOUNDING_RECT="3888.9277781666697 -15726.995517694004 454 71"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21321"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Origine" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Accessibilite" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Signe" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; Type SET_TO PFP1"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="144"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="3888.9277781666697 -16527.167896624956"
+#!   BOUNDING_RECT="3888.9277781666697 -16527.167896624956 454 71"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21321"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Origine" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; Type SET_TO PFA2"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="145"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="3888.9277781666697 -16716.971005357838"
+#!   BOUNDING_RECT="3888.9277781666697 -16716.971005357838 454 71"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21321"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Origine" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Accessibilite" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Signe" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; Type SET_TO PFP2"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_4"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="148"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="3888.9277781666697 -17453.078569566573"
+#!   BOUNDING_RECT="3888.9277781666697 -17453.078569566573 454 71"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21321"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Origine" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; Type SET_TO PFA3"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_5"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="149"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="3888.9277781666697 -17642.881678299455"
+#!   BOUNDING_RECT="3888.9277781666697 -17642.881678299455 454 71"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21321"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="xtf_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Origine" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Signe" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Fiche" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; Type SET_TO PFP3"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_6"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="42"
+#!   TYPE="AttributeManager"
+#!   VERSION="3"
+#!   POSITION="5095.6649917376362 -15687.794046921586"
+#!   BOUNDING_RECT="5095.6649917376362 -15687.794046921586 454 71"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21321"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Accessibilite" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Signe" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="xtf_id xtf_id  REMOVE Origine Origine  REMOVE IdentDN IdentDN  NO_OP Numero Numero  NO_OP GeomAlt GeomAlt  NO_OP PrecPlan PrecPlan  NO_OP FiabPlan FiabPlan  NO_OP PrecAlt PrecAlt  NO_OP FiabAlt FiabAlt  NO_OP Accessibilite Accessibilite  NO_OP Signe Signe  NO_OP Fiche Fiche  REMOVE Type Type  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="51"
+#!   TYPE="AttributeManager"
+#!   VERSION="3"
+#!   POSITION="5048.883573571894 -16716.971005357838"
+#!   BOUNDING_RECT="5048.883573571894 -16716.971005357838 454 71"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21321"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Accessibilite" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Signe" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="xtf_id xtf_id  REMOVE Origine Origine  REMOVE IdentDN IdentDN  NO_OP Numero Numero  NO_OP GeomAlt GeomAlt  NO_OP PrecPlan PrecPlan  NO_OP FiabPlan FiabPlan  NO_OP PrecAlt PrecAlt  NO_OP FiabAlt FiabAlt  NO_OP Accessibilite Accessibilite  NO_OP Signe Signe  NO_OP Fiche Fiche  REMOVE Type Type  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="45"
+#!   TYPE="AttributeManager"
+#!   VERSION="3"
+#!   POSITION="5048.883573571894 -17642.881678299455"
+#!   BOUNDING_RECT="5048.883573571894 -17642.881678299455 454 71"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21321"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Accessibilite" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Signe" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="xtf_id xtf_id  REMOVE Origine Origine  REMOVE IdentDN IdentDN  NO_OP Numero Numero  NO_OP GeomAlt GeomAlt  NO_OP PrecPlan PrecPlan  NO_OP FiabPlan FiabPlan  NO_OP PrecAlt PrecAlt  NO_OP FiabAlt FiabAlt  NO_OP Accessibilite Accessibilite  NO_OP Signe Signe  NO_OP Fiche Fiche  REMOVE Type Type  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="31"
+#!   TYPE="Sorter"
+#!   VERSION="3"
+#!   POSITION="5961.7201152706457 -15756.122963544087"
+#!   BOUNDING_RECT="5961.7201152706457 -15756.122963544087 454 71"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21321"
+#! >
+#!     <OUTPUT_FEAT NAME="SORTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Accessibilite" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Signe" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="SORT_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SORT_PARM" PARM_VALUE="Numero NATURAL ASCENDING"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sorter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="34"
+#!   TYPE="Sorter"
+#!   VERSION="3"
+#!   POSITION="5961.7201152706457 -16716.971005357838"
+#!   BOUNDING_RECT="5961.7201152706457 -16716.971005357838 454 71"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21321"
+#! >
+#!     <OUTPUT_FEAT NAME="SORTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Accessibilite" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Signe" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="SORT_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SORT_PARM" PARM_VALUE="Numero NATURAL ASCENDING"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sorter_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="37"
+#!   TYPE="Sorter"
+#!   VERSION="3"
+#!   POSITION="5961.7201152706457 -17642.881678299455"
+#!   BOUNDING_RECT="5961.7201152706457 -17642.881678299455 454 71"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21321"
+#! >
+#!     <OUTPUT_FEAT NAME="SORTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="IdentDN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Numero" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GeomAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabPlan" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PrecAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FiabAlt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Accessibilite" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Signe" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="SORT_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SORT_PARM" PARM_VALUE="Numero NATURAL ASCENDING"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sorter_3"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="28"
+#!   SOURCE_NODE="97"
+#!   TARGET_NODE="145"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="26"
+#!   SOURCE_NODE="107"
+#!   TARGET_NODE="142"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="25"
+#!   SOURCE_NODE="138"
+#!   TARGET_NODE="140"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="29"
+#!   SOURCE_NODE="179"
+#!   TARGET_NODE="148"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="30"
+#!   SOURCE_NODE="201"
+#!   TARGET_NODE="149"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="27"
+#!   SOURCE_NODE="205"
+#!   TARGET_NODE="144"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="33"
+#!   SOURCE_NODE="31"
+#!   TARGET_NODE="43"
+#!   SOURCE_PORT_DESC="fo 0 SORTED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="36"
+#!   SOURCE_NODE="34"
+#!   TARGET_NODE="47"
+#!   SOURCE_PORT_DESC="fo 0 SORTED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="40"
+#!   SOURCE_NODE="37"
+#!   TARGET_NODE="52"
+#!   SOURCE_PORT_DESC="fo 0 SORTED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="32"
+#!   SOURCE_NODE="42"
+#!   TARGET_NODE="31"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="38"
+#!   SOURCE_NODE="45"
+#!   TARGET_NODE="37"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="35"
+#!   SOURCE_NODE="51"
+#!   TARGET_NODE="34"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="39"
+#!   SOURCE_NODE="142"
+#!   TARGET_NODE="42"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="41"
+#!   SOURCE_NODE="145"
+#!   TARGET_NODE="51"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="53"
+#!   SOURCE_NODE="149"
+#!   TARGET_NODE="45"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 38
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_FME_GROUP_NAMED1_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_VALIDATE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_VALIDATE_MULTIPLICITY_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_VALIDATE_CONFIG_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_IGNOREPOLYGONBUILDINGERRORS_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_LINETABLES_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1,ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1,DestDataset_GEOJSON_1,GEOJSON_OUT_FME_GROUP_NAMED1_GEOJSON_1,GEOJSON_OUT_WRITER_CHARSET_GEOJSON_1,GEOJSON_OUT_WRITE_BOM_GEOJSON_1,GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_1,GEOJSON_OUT_FME_GROUP_NAMED2_GEOJSON_1,GEOJSON_OUT_PRETTY_PRINT_GEOJSON_1,GEOJSON_OUT_INDENT_SIZE_GEOJSON_1,GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_1,GEOJSON_OUT_FME_GROUP_NAMED3_GEOJSON_1,GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_1,GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_1,GEOJSON_OUT_FME_GROUP_NAMED4_GEOJSON_1,GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_1,DestDataset_GEOJSON_2,GEOJSON_OUT_FME_GROUP_NAMED1_GEOJSON_2,GEOJSON_OUT_WRITER_CHARSET_GEOJSON_2,GEOJSON_OUT_WRITE_BOM_GEOJSON_2,GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_2,GEOJSON_OUT_FME_GROUP_NAMED2_GEOJSON_2,GEOJSON_OUT_PRETTY_PRINT_GEOJSON_2,GEOJSON_OUT_INDENT_SIZE_GEOJSON_2,GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_2,GEOJSON_OUT_FME_GROUP_NAMED3_GEOJSON_2,GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_2,GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_2,GEOJSON_OUT_FME_GROUP_NAMED4_GEOJSON_2,GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_2,DestDataset_GEOJSON_3,GEOJSON_OUT_FME_GROUP_NAMED1_GEOJSON_3,GEOJSON_OUT_WRITER_CHARSET_GEOJSON_3,GEOJSON_OUT_WRITE_BOM_GEOJSON_3,GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_3,GEOJSON_OUT_FME_GROUP_NAMED2_GEOJSON_3,GEOJSON_OUT_PRETTY_PRINT_GEOJSON_3,GEOJSON_OUT_INDENT_SIZE_GEOJSON_3,GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_3,GEOJSON_OUT_FME_GROUP_NAMED3_GEOJSON_3,GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_3,GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_3,GEOJSON_OUT_FME_GROUP_NAMED4_GEOJSON_3,GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_3
+# ============================================================================
+DEFAULT_MACRO DestDataset_GEOJSON C:\Users\jerem\Downloads\viseposs\data\pfp1.geojson
+DEFAULT_MACRO DestDataset_GEOJSON_5 C:\Users\jerem\Downloads\viseposs\data\pfp2.geojson
+DEFAULT_MACRO DestDataset_GEOJSON_4 C:\Users\jerem\Downloads\viseposs\data\pfp3.geojson
+DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_3 ""$(FME_MF_DIR)itf\0074be070300040100001.itf" "$(FME_MF_DIR)itf\0074be071300040100001.itf""
+# ============================================================================
+GUI FILENAME DestDataset_GEOJSON GeoJSON_Files(*.json)|*.json|All_Files|* Destination GeoJSON File:
+GUI FILENAME DestDataset_GEOJSON_5 GeoJSON_Files(*.json)|*.json|All_Files|* Destination GeoJSON File:
+GUI FILENAME DestDataset_GEOJSON_4 GeoJSON_Files(*.json)|*.json|All_Files|* Destination GeoJSON File:
+GUI MULTIFILE SourceDataset_ch.ehi.fme.Main_3 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|*.* Original INTERLIS 2 File:
+# ============================================================================
+USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiJDOlxcVXNlcnNcXGplcmVtXFxEb3dubG9hZHNcXHZpc2Vwb3NzXFxkYXRhXFxwZnAxLmdlb2pzb24iLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6Ikdlb0pTT04gRmlsZXMiLCJmaWx0ZXIiOlsiKi5qc29uIl19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9HRU9KU09OIiwicHJvbXB0IjoiRGVzdGluYXRpb24gR2VvSlNPTiBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJ3cml0ZSIsImRlZmF1bHRWYWx1ZSI6IkM6XFxVc2Vyc1xcamVyZW1cXERvd25sb2Fkc1xcdmlzZXBvc3NcXGRhdGFcXHBmcDIuZ2VvanNvbiIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiR2VvSlNPTiBGaWxlcyIsImZpbHRlciI6WyIqLmpzb24iXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBGaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3REYXRhc2V0X0dFT0pTT05fNSIsInByb21wdCI6IkRlc3RpbmF0aW9uIEdlb0pTT04gRmlsZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiJDOlxcVXNlcnNcXGplcmVtXFxEb3dubG9hZHNcXHZpc2Vwb3NzXFxkYXRhXFxwZnAzLmdlb2pzb24iLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6Ikdlb0pTT04gRmlsZXMiLCJmaWx0ZXIiOlsiKi5qc29uIl19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9HRU9KU09OXzQiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBHZW9KU09OIEZpbGU6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6InJlYWQiLCJkZWZhdWx0VmFsdWUiOiJcIlwiJChGTUVfTUZfRElSX1VTRVJUWVBFRClpdGZcXDAwNzRiZTA3MDMwMDA0MDEwMDAwMS5pdGZcIiBcIiQoRk1FX01GX0RJUl9VU0VSVFlQRUQpaXRmXFwwMDc0YmUwNzEzMDAwNDAxMDAwMDEuaXRmXCJcIiIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiSU5URVJMSVMgRmlsZXMiLCJmaWx0ZXIiOlsiKi54dGYiLCIqLnhtbCIsIiouaXRmIiwiKi5pbGkiXX0seyJkZXNjcmlwdGlvbiI6IklOVEVSTElTIDIgRmlsZXMiLCJmaWx0ZXIiOlsiKi54dGYiLCIqLnhtbCJdfSx7ImRlc2NyaXB0aW9uIjoiSU5URVJMSVMgMSBGSUxFUyIsImZpbHRlciI6WyIqLml0ZiJdfSx7ImRlc2NyaXB0aW9uIjoiSU5URVJMSVMgTU9ERUxTIiwiZmlsdGVyIjpbIiouaWxpIl19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9jaC5laGkuZm1lLk1haW5fMyIsInByb21wdCI6Ik9yaWdpbmFsIElOVEVSTElTIDIgRmlsZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOnRydWUsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19
+# ============================================================================
+INCLUDE [ if {{$(DestDataset_GEOJSON)} == {}} { puts_real {Parameter 'DestDataset_GEOJSON' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_GEOJSON_5)} == {}} { puts_real {Parameter 'DestDataset_GEOJSON_5' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_GEOJSON_4)} == {}} { puts_real {Parameter 'DestDataset_GEOJSON_4' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_ch.ehi.fme.Main_3)} == {}} { puts_real {Parameter 'SourceDataset_ch.ehi.fme.Main_3' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} ch.ehi.fme.Main
+MULTI_READER_KEYWORD{0} ch.ehi.fme.Main_1
+MULTI_READER_GEN_DIRECTIVES{0} MODEL_DIR,%XTF_DIR<semicolon>http:<solidus><solidus>models.interlis.ch<solidus><semicolon>C:<backslash>Program<space>Files<space><openparen>x86<closeparen><backslash>FME<solidus>plugins<solidus>interlis2<solidus>ilimodels<semicolon>C:<backslash>Program<space>Files<space><openparen>x86<closeparen><backslash>FME<solidus>plugins<solidus>interlis2<solidus>ili22models,ILI1_IGNOREPOLYGONBUILDINGERRORS,No,ILI1_ADDDEFVAL,No,CREATEFEATURETYPE4ENUM,No,ILI1_ENUMASITFCODE,No,HTTP_PROXYHOST,,CHECK_UNIQUEOID,No,VALIDATE_CONFIG,,GEOM_ATTR_MAPPING,EncodeAsFmeAttribute,MODELS,%DATA,GEOMETRY_ENCODING,FMEBIN,TRIM_VALUES,Yes,INHERITANCE_MAPPING,SuperClass,VALIDATE,Yes,TOPICS_FILTER,,ILI1_LINETABLES,Polygon,TRACEMSGS,No,ILI1_RENUMBERTID,No,HTTP_PROXYPORT,,_MERGE_SCHEMAS,YES,VALIDATE_MULTIPLICITY,Yes
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} GEOJSON
+MULTI_WRITER_KEYWORD{0} GEOJSON_1
+MULTI_WRITER_TYPE{1} GEOJSON
+MULTI_WRITER_KEYWORD{1} GEOJSON_2
+MULTI_WRITER_TYPE{2} GEOJSON
+MULTI_WRITER_KEYWORD{2} GEOJSON_3
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ch.ehi.fme.Main_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_1
+# ============================================================================
+# The following GUI line prompts for a file to be used as the
+# source of the input data.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+GUI FILENAME SourceDataset_ch.ehi.fme.Main_1 INTERLIS_Files(*.xtf;*.xml;*.itf;*.ili)|*.xtf;*.xml;*.itf;*.ili|INTERLIS_2_Files(*.xtf;*.xml)|*.xtf;*.xml|INTERLIS_1_FILES(*.itf)|*.itf|INTERLIS_MODELS(*.ili)|*.ili|All_Files|*.* Original INTERLIS 2 File:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_FME_GROUP_NAMED1_ch.ehi.fme.Main_1 
+GUI OPTIONAL DISCLOSUREGROUP ch.ehi.fme.Main_IN_FME_GROUP_NAMED1_ch.ehi.fme.Main_1 ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_VALIDATE_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_VALIDATE_MULTIPLICITY_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_VALIDATE_CONFIG_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_ILI1_IGNOREPOLYGONBUILDINGERRORS_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_ILI1_LINETABLES_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1%ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1 Parameters
+DEFAULT_MACRO ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1 %DATA
+ch.ehi.fme.Main_1_MODELS "$(ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1)"
+GUI TEXT ch.ehi.fme.Main_IN_MODELS_ch.ehi.fme.Main_1 Models:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1 %XTF_DIR;http://models.interlis.ch/;C:\Program Files (x86)\FME/plugins/interlis2/ilimodels;C:\Program Files (x86)\FME/plugins/interlis2/ili22models
+ch.ehi.fme.Main_1_MODEL_DIR "$(ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1)"
+GUI TEXT ch.ehi.fme.Main_IN_MODEL_DIR_ch.ehi.fme.Main_1 Models Directory:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_TOPICS_FILTER "$(ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1)"
+GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_TOPICS_FILTER_ch.ehi.fme.Main_1 Topics filter:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_CHECK_UNIQUEOID "$(ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_CHECK_UNIQUEOID_ch.ehi.fme.Main_1 Yes%No Check TID/OID Uniqueness:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_VALIDATE_ch.ehi.fme.Main_1 Yes
+ch.ehi.fme.Main_1_VALIDATE "$(ch.ehi.fme.Main_IN_VALIDATE_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_VALIDATE_ch.ehi.fme.Main_1 Yes%No Validate:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_VALIDATE_MULTIPLICITY_ch.ehi.fme.Main_1 Yes
+ch.ehi.fme.Main_1_VALIDATE_MULTIPLICITY "$(ch.ehi.fme.Main_IN_VALIDATE_MULTIPLICITY_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_VALIDATE_MULTIPLICITY_ch.ehi.fme.Main_1 Yes%No Validate Attribute/Role Multiplicity:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_VALIDATE_CONFIG_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_VALIDATE_CONFIG "$(ch.ehi.fme.Main_IN_VALIDATE_CONFIG_ch.ehi.fme.Main_1)"
+GUI OPTIONAL FILENAME ch.ehi.fme.Main_IN_VALIDATE_CONFIG_ch.ehi.fme.Main_1 ilivalidator_Configuration_Files(*.ini)|*.ini|All_Files|*.* Validator Configuration:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_IGNOREPOLYGONBUILDINGERRORS_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_ILI1_IGNOREPOLYGONBUILDINGERRORS "$(ch.ehi.fme.Main_IN_ILI1_IGNOREPOLYGONBUILDINGERRORS_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_IGNOREPOLYGONBUILDINGERRORS_ch.ehi.fme.Main_1 Yes%No ITF Ignore Polygon Building Errors:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1 FMEBIN
+ch.ehi.fme.Main_1_GEOMETRY_ENCODING "$(ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_GEOMETRY_ENCODING_ch.ehi.fme.Main_1 FMEXML%FMEBIN%FMEHEXBIN%OGCHEXBIN Geometry Encoding:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1 EncodeAsFmeAttribute
+ch.ehi.fme.Main_1_GEOM_ATTR_MAPPING "$(ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_GEOM_ATTR_MAPPING_ch.ehi.fme.Main_1 EncodeAsFmeAttribute%RepeatFeature Mapping of multiple Geometry Attributes:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_LINETABLES_ch.ehi.fme.Main_1 Polygon
+ch.ehi.fme.Main_1_ILI1_LINETABLES "$(ch.ehi.fme.Main_IN_ILI1_LINETABLES_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_LINETABLES_ch.ehi.fme.Main_1 Polygon%Raw%Polygon+Raw ITF Linetable Mapping:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1 SuperClass
+ch.ehi.fme.Main_1_INHERITANCE_MAPPING "$(ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_INHERITANCE_MAPPING_ch.ehi.fme.Main_1 SuperClass%SubClass Inheritance Mapping Strategy:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1 Yes
+ch.ehi.fme.Main_1_TRIM_VALUES "$(ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_TRIM_VALUES_ch.ehi.fme.Main_1 Yes%No Trim Values:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_ILI1_ADDDEFVAL "$(ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ADDDEFVAL_ch.ehi.fme.Main_1 Yes%No ITF Add Default Values:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_ILI1_RENUMBERTID "$(ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_RENUMBERTID_ch.ehi.fme.Main_1 Yes%No ITF Renumber TIDs:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_ILI1_ENUMASITFCODE "$(ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_ILI1_ENUMASITFCODE_ch.ehi.fme.Main_1 Yes%No ITF Read enum Values as Code:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_CREATEFEATURETYPE4ENUM "$(ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_CREATEFEATURETYPE4ENUM_ch.ehi.fme.Main_1 No%SingleType%OneTypePerEnumDef Create Feature Types for Enumerations:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_HTTP_PROXYHOST "$(ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1)"
+GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYHOST_ch.ehi.fme.Main_1 http Proxy Host:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_HTTP_PROXYPORT "$(ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1)"
+GUI OPTIONAL TEXT ch.ehi.fme.Main_IN_HTTP_PROXYPORT_ch.ehi.fme.Main_1 http Proxy Port:
+DEFAULT_MACRO ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1 No
+ch.ehi.fme.Main_1_TRACEMSGS "$(ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1)"
+GUI CHOICE ch.ehi.fme.Main_IN_TRACEMSGS_ch.ehi.fme.Main_1 Yes%No Enable Trace Messages:
+# ===========================================================================
+DEFAULT_MACRO ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1 
+ch.ehi.fme.Main_1_NETWORK_AUTHENTICATION "$(ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1)"
+GUI OPTIONAL AUTHENTICATOR ch.ehi.fme.Main_IN_NETWORK_AUTHENTICATION_ch.ehi.fme.Main_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO ch.ehi.fme.Main_IN_ATTRIBUTE_READING_ch.ehi.fme.Main_1 ALL
+ch.ehi.fme.Main_1_ATTRIBUTE_READING "$(ch.ehi.fme.Main_IN_ATTRIBUTE_READING_ch.ehi.fme.Main_1)"
+# ============================================================================
+ch.ehi.fme.Main_1_GENERATE_FME_BUILD_NUM 21321
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ch.ehi.fme.Main ch.ehi.fme.Main_1
+DEFAULT_MACRO SourceDataset_ch.ehi.fme.Main_1 $(SourceDataset_ch.ehi.fme.Main_3)
+ch.ehi.fme.Main_1_DATASET "$(SourceDataset_ch.ehi.fme.Main_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "GEOJSON_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER GEOJSON GEOJSON_1
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_GEOJSON_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER GEOJSON GEOJSON_1
+DEFAULT_MACRO DestDataset_GEOJSON_1 $(DestDataset_GEOJSON)
+GUI FILENAME DestDataset_GEOJSON_1 GeoJSON_Files(*.json)|*.json|All_Files|* Destination GeoJSON File:
+DEFAULT_MACRO GEOJSON_OUT_FME_GROUP_NAMED1_GEOJSON_1 
+GUI OPTIONAL DISCLOSUREGROUP GEOJSON_OUT_FME_GROUP_NAMED1_GEOJSON_1 GEOJSON_OUT_WRITER_CHARSET_GEOJSON_1%GEOJSON_OUT_WRITE_BOM_GEOJSON_1%GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_1 Writer Parameters
+DEFAULT_MACRO GEOJSON_OUT_WRITER_CHARSET_GEOJSON_1 UTF-8
+GEOJSON_1_WRITER_CHARSET "$(GEOJSON_OUT_WRITER_CHARSET_GEOJSON_1)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_WRITER_CHARSET_GEOJSON_1 UTF-8,UTF-8%UTF-16,UTF-16%UTF-16BE,UTF-16BE%UTF-16LE,UTF-16LE%UTF-32,UTF-32%UTF-32BE,UTF-32BE%UTF-32LE,UTF-32LE Output Character Set:
+DEFAULT_MACRO GEOJSON_OUT_WRITE_BOM_GEOJSON_1 No
+GEOJSON_1_WRITE_BOM "$(GEOJSON_OUT_WRITE_BOM_GEOJSON_1)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_WRITE_BOM_GEOJSON_1 Yes,Yes%No,No Byte Order Marker:
+DEFAULT_MACRO GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_1 SINGLE_FEATURE_COLLECTION
+GEOJSON_1_FILE_STRUCTURE "$(GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_1)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_1 Single<space>FeatureCollection<space>object<space>containing<space>all<space>features,SINGLE_FEATURE_COLLECTION%Array<space>of<space>FeatureCollection<space>objects<space>-<space>one<space>per<space>feature<space>type,ARRAY_OF_FEATURE_COLLECTIONS%Object<space>with<space>feature<space>type<space>names<space>as<space>keys<comma><space>FeatureCollection<space>objects<space>as<space>values,OBJECT_WITH_FEATURE_TYPE_KEYS File Structure:
+DEFAULT_MACRO GEOJSON_OUT_FME_GROUP_NAMED2_GEOJSON_1 
+GUI OPTIONAL DISCLOSUREGROUP GEOJSON_OUT_FME_GROUP_NAMED2_GEOJSON_1 GEOJSON_OUT_PRETTY_PRINT_GEOJSON_1%GEOJSON_OUT_INDENT_SIZE_GEOJSON_1%GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_1 Formatting Parameters
+DEFAULT_MACRO GEOJSON_OUT_PRETTY_PRINT_GEOJSON_1 YES
+GEOJSON_1_PRETTY_PRINT "$(GEOJSON_OUT_PRETTY_PRINT_GEOJSON_1)"
+GUI ACTIVECHOICE_LOOKUP GEOJSON_OUT_PRETTY_PRINT_GEOJSON_1 Pretty<space>Print,YES%Linear,NO,GEOJSON_OUT_INDENT_SIZE_GEOJSON_1 Formatting Type:
+DEFAULT_MACRO GEOJSON_OUT_INDENT_SIZE_GEOJSON_1 0
+GEOJSON_1_INDENT_SIZE "$(GEOJSON_OUT_INDENT_SIZE_GEOJSON_1)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_INDENT_SIZE_GEOJSON_1 Tabs,0%1<space>space,1%2<space>spaces,2%3<space>spaces,3%4<space>spaces,4%5<space>spaces,5%6<space>spaces,6%7<space>spaces,7%8<space>spaces,8 Indent Size:
+DEFAULT_MACRO GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_1 10
+GEOJSON_1_MAX_COORDINATE_PRECISION "$(GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_1)"
+GUI RANGE_SLIDER GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_1 1%15%0%ON Coordinate Precision (Maximum Number of Fractional Digits):
+DEFAULT_MACRO GEOJSON_OUT_FME_GROUP_NAMED3_GEOJSON_1 
+GUI OPTIONAL DISCLOSUREGROUP GEOJSON_OUT_FME_GROUP_NAMED3_GEOJSON_1 GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_1%GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_1 Geometry
+DEFAULT_MACRO GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_1 Yes
+GEOJSON_1_COUNTER_CLOCKWISE_AREAS "$(GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_1)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_1 Yes,Yes%No,No Convert Areas to Counterclockwise:
+DEFAULT_MACRO GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_1 Yes
+GEOJSON_1_WGS84_REPROJECTION "$(GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_1)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_1 Yes,Yes%No,No Reproject to WGS84:
+DEFAULT_MACRO GEOJSON_OUT_FME_GROUP_NAMED4_GEOJSON_1 
+GUI OPTIONAL DISCLOSUREGROUP GEOJSON_OUT_FME_GROUP_NAMED4_GEOJSON_1 GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_1 JSONP
+DEFAULT_MACRO GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_1 
+GEOJSON_1_JSONP_FUNC_NAME "$(GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_1)"
+GUI OPTIONAL TEXT GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_1 JSONP Function Name:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO GEOJSON_OUT_DESTINATION_DATASETTYPE_VALIDATION_GEOJSON_1 Yes
+GEOJSON_1_DESTINATION_DATASETTYPE_VALIDATION "$(GEOJSON_OUT_DESTINATION_DATASETTYPE_VALIDATION_GEOJSON_1)"
+# ============================================================================
+GEOJSON_1_GENERATE_FME_BUILD_NUM 21321
+GEOJSON_1_DATASET "$(DestDataset_GEOJSON_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "GEOJSON_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER GEOJSON GEOJSON_2
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_GEOJSON_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER GEOJSON GEOJSON_2
+DEFAULT_MACRO DestDataset_GEOJSON_2 $(DestDataset_GEOJSON_5)
+GUI FILENAME DestDataset_GEOJSON_2 GeoJSON_Files(*.json)|*.json|All_Files|* Destination GeoJSON File:
+DEFAULT_MACRO GEOJSON_OUT_FME_GROUP_NAMED1_GEOJSON_2 
+GUI OPTIONAL DISCLOSUREGROUP GEOJSON_OUT_FME_GROUP_NAMED1_GEOJSON_2 GEOJSON_OUT_WRITER_CHARSET_GEOJSON_2%GEOJSON_OUT_WRITE_BOM_GEOJSON_2%GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_2 Writer Parameters
+DEFAULT_MACRO GEOJSON_OUT_WRITER_CHARSET_GEOJSON_2 UTF-8
+GEOJSON_2_WRITER_CHARSET "$(GEOJSON_OUT_WRITER_CHARSET_GEOJSON_2)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_WRITER_CHARSET_GEOJSON_2 UTF-8,UTF-8%UTF-16,UTF-16%UTF-16BE,UTF-16BE%UTF-16LE,UTF-16LE%UTF-32,UTF-32%UTF-32BE,UTF-32BE%UTF-32LE,UTF-32LE Output Character Set:
+DEFAULT_MACRO GEOJSON_OUT_WRITE_BOM_GEOJSON_2 No
+GEOJSON_2_WRITE_BOM "$(GEOJSON_OUT_WRITE_BOM_GEOJSON_2)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_WRITE_BOM_GEOJSON_2 Yes,Yes%No,No Byte Order Marker:
+DEFAULT_MACRO GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_2 SINGLE_FEATURE_COLLECTION
+GEOJSON_2_FILE_STRUCTURE "$(GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_2)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_2 Single<space>FeatureCollection<space>object<space>containing<space>all<space>features,SINGLE_FEATURE_COLLECTION%Array<space>of<space>FeatureCollection<space>objects<space>-<space>one<space>per<space>feature<space>type,ARRAY_OF_FEATURE_COLLECTIONS%Object<space>with<space>feature<space>type<space>names<space>as<space>keys<comma><space>FeatureCollection<space>objects<space>as<space>values,OBJECT_WITH_FEATURE_TYPE_KEYS File Structure:
+DEFAULT_MACRO GEOJSON_OUT_FME_GROUP_NAMED2_GEOJSON_2 
+GUI OPTIONAL DISCLOSUREGROUP GEOJSON_OUT_FME_GROUP_NAMED2_GEOJSON_2 GEOJSON_OUT_PRETTY_PRINT_GEOJSON_2%GEOJSON_OUT_INDENT_SIZE_GEOJSON_2%GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_2 Formatting Parameters
+DEFAULT_MACRO GEOJSON_OUT_PRETTY_PRINT_GEOJSON_2 YES
+GEOJSON_2_PRETTY_PRINT "$(GEOJSON_OUT_PRETTY_PRINT_GEOJSON_2)"
+GUI ACTIVECHOICE_LOOKUP GEOJSON_OUT_PRETTY_PRINT_GEOJSON_2 Pretty<space>Print,YES%Linear,NO,GEOJSON_OUT_INDENT_SIZE_GEOJSON_2 Formatting Type:
+DEFAULT_MACRO GEOJSON_OUT_INDENT_SIZE_GEOJSON_2 0
+GEOJSON_2_INDENT_SIZE "$(GEOJSON_OUT_INDENT_SIZE_GEOJSON_2)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_INDENT_SIZE_GEOJSON_2 Tabs,0%1<space>space,1%2<space>spaces,2%3<space>spaces,3%4<space>spaces,4%5<space>spaces,5%6<space>spaces,6%7<space>spaces,7%8<space>spaces,8 Indent Size:
+DEFAULT_MACRO GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_2 10
+GEOJSON_2_MAX_COORDINATE_PRECISION "$(GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_2)"
+GUI RANGE_SLIDER GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_2 1%15%0%ON Coordinate Precision (Maximum Number of Fractional Digits):
+DEFAULT_MACRO GEOJSON_OUT_FME_GROUP_NAMED3_GEOJSON_2 
+GUI OPTIONAL DISCLOSUREGROUP GEOJSON_OUT_FME_GROUP_NAMED3_GEOJSON_2 GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_2%GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_2 Geometry
+DEFAULT_MACRO GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_2 Yes
+GEOJSON_2_COUNTER_CLOCKWISE_AREAS "$(GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_2)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_2 Yes,Yes%No,No Convert Areas to Counterclockwise:
+DEFAULT_MACRO GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_2 Yes
+GEOJSON_2_WGS84_REPROJECTION "$(GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_2)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_2 Yes,Yes%No,No Reproject to WGS84:
+DEFAULT_MACRO GEOJSON_OUT_FME_GROUP_NAMED4_GEOJSON_2 
+GUI OPTIONAL DISCLOSUREGROUP GEOJSON_OUT_FME_GROUP_NAMED4_GEOJSON_2 GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_2 JSONP
+DEFAULT_MACRO GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_2 
+GEOJSON_2_JSONP_FUNC_NAME "$(GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_2)"
+GUI OPTIONAL TEXT GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_2 JSONP Function Name:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO GEOJSON_OUT_DESTINATION_DATASETTYPE_VALIDATION_GEOJSON_2 Yes
+GEOJSON_2_DESTINATION_DATASETTYPE_VALIDATION "$(GEOJSON_OUT_DESTINATION_DATASETTYPE_VALIDATION_GEOJSON_2)"
+# ============================================================================
+GEOJSON_2_GENERATE_FME_BUILD_NUM 21321
+GEOJSON_2_DATASET "$(DestDataset_GEOJSON_2)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "GEOJSON_3"
+#! END_WB_HEADER
+#! START_DEST_HEADER GEOJSON GEOJSON_3
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_GEOJSON_3 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER GEOJSON GEOJSON_3
+DEFAULT_MACRO DestDataset_GEOJSON_3 $(DestDataset_GEOJSON_4)
+GUI FILENAME DestDataset_GEOJSON_3 GeoJSON_Files(*.json)|*.json|All_Files|* Destination GeoJSON File:
+DEFAULT_MACRO GEOJSON_OUT_FME_GROUP_NAMED1_GEOJSON_3 
+GUI OPTIONAL DISCLOSUREGROUP GEOJSON_OUT_FME_GROUP_NAMED1_GEOJSON_3 GEOJSON_OUT_WRITER_CHARSET_GEOJSON_3%GEOJSON_OUT_WRITE_BOM_GEOJSON_3%GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_3 Writer Parameters
+DEFAULT_MACRO GEOJSON_OUT_WRITER_CHARSET_GEOJSON_3 UTF-8
+GEOJSON_3_WRITER_CHARSET "$(GEOJSON_OUT_WRITER_CHARSET_GEOJSON_3)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_WRITER_CHARSET_GEOJSON_3 UTF-8,UTF-8%UTF-16,UTF-16%UTF-16BE,UTF-16BE%UTF-16LE,UTF-16LE%UTF-32,UTF-32%UTF-32BE,UTF-32BE%UTF-32LE,UTF-32LE Output Character Set:
+DEFAULT_MACRO GEOJSON_OUT_WRITE_BOM_GEOJSON_3 No
+GEOJSON_3_WRITE_BOM "$(GEOJSON_OUT_WRITE_BOM_GEOJSON_3)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_WRITE_BOM_GEOJSON_3 Yes,Yes%No,No Byte Order Marker:
+DEFAULT_MACRO GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_3 SINGLE_FEATURE_COLLECTION
+GEOJSON_3_FILE_STRUCTURE "$(GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_3)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_FILE_STRUCTURE_GEOJSON_3 Single<space>FeatureCollection<space>object<space>containing<space>all<space>features,SINGLE_FEATURE_COLLECTION%Array<space>of<space>FeatureCollection<space>objects<space>-<space>one<space>per<space>feature<space>type,ARRAY_OF_FEATURE_COLLECTIONS%Object<space>with<space>feature<space>type<space>names<space>as<space>keys<comma><space>FeatureCollection<space>objects<space>as<space>values,OBJECT_WITH_FEATURE_TYPE_KEYS File Structure:
+DEFAULT_MACRO GEOJSON_OUT_FME_GROUP_NAMED2_GEOJSON_3 
+GUI OPTIONAL DISCLOSUREGROUP GEOJSON_OUT_FME_GROUP_NAMED2_GEOJSON_3 GEOJSON_OUT_PRETTY_PRINT_GEOJSON_3%GEOJSON_OUT_INDENT_SIZE_GEOJSON_3%GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_3 Formatting Parameters
+DEFAULT_MACRO GEOJSON_OUT_PRETTY_PRINT_GEOJSON_3 YES
+GEOJSON_3_PRETTY_PRINT "$(GEOJSON_OUT_PRETTY_PRINT_GEOJSON_3)"
+GUI ACTIVECHOICE_LOOKUP GEOJSON_OUT_PRETTY_PRINT_GEOJSON_3 Pretty<space>Print,YES%Linear,NO,GEOJSON_OUT_INDENT_SIZE_GEOJSON_3 Formatting Type:
+DEFAULT_MACRO GEOJSON_OUT_INDENT_SIZE_GEOJSON_3 0
+GEOJSON_3_INDENT_SIZE "$(GEOJSON_OUT_INDENT_SIZE_GEOJSON_3)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_INDENT_SIZE_GEOJSON_3 Tabs,0%1<space>space,1%2<space>spaces,2%3<space>spaces,3%4<space>spaces,4%5<space>spaces,5%6<space>spaces,6%7<space>spaces,7%8<space>spaces,8 Indent Size:
+DEFAULT_MACRO GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_3 10
+GEOJSON_3_MAX_COORDINATE_PRECISION "$(GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_3)"
+GUI RANGE_SLIDER GEOJSON_OUT_MAX_COORDINATE_PRECISION_GEOJSON_3 1%15%0%ON Coordinate Precision (Maximum Number of Fractional Digits):
+DEFAULT_MACRO GEOJSON_OUT_FME_GROUP_NAMED3_GEOJSON_3 
+GUI OPTIONAL DISCLOSUREGROUP GEOJSON_OUT_FME_GROUP_NAMED3_GEOJSON_3 GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_3%GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_3 Geometry
+DEFAULT_MACRO GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_3 Yes
+GEOJSON_3_COUNTER_CLOCKWISE_AREAS "$(GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_3)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_COUNTER_CLOCKWISE_AREAS_GEOJSON_3 Yes,Yes%No,No Convert Areas to Counterclockwise:
+DEFAULT_MACRO GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_3 Yes
+GEOJSON_3_WGS84_REPROJECTION "$(GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_3)"
+GUI LOOKUP_CHOICE GEOJSON_OUT_WGS84_REPROJECTION_GEOJSON_3 Yes,Yes%No,No Reproject to WGS84:
+DEFAULT_MACRO GEOJSON_OUT_FME_GROUP_NAMED4_GEOJSON_3 
+GUI OPTIONAL DISCLOSUREGROUP GEOJSON_OUT_FME_GROUP_NAMED4_GEOJSON_3 GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_3 JSONP
+DEFAULT_MACRO GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_3 
+GEOJSON_3_JSONP_FUNC_NAME "$(GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_3)"
+GUI OPTIONAL TEXT GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_3 JSONP Function Name:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO GEOJSON_OUT_DESTINATION_DATASETTYPE_VALIDATION_GEOJSON_3 Yes
+GEOJSON_3_DESTINATION_DATASETTYPE_VALIDATION "$(GEOJSON_OUT_DESTINATION_DATASETTYPE_VALIDATION_GEOJSON_3)"
+# ============================================================================
+GEOJSON_3_GENERATE_FME_BUILD_NUM 21321
+GEOJSON_3_DATASET "$(DestDataset_GEOJSON_3)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)ITF_CH_to_GEOJSON.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING windows-1252
+DEFAULT_MACRO DATASET_KEYWORD_ch.ehi.fme.Main_1 ch.ehi.fme.Main_1
+DEFAULT_MACRO DATASET_KEYWORD_GEOJSON_1 GEOJSON_1
+DEFAULT_MACRO DATASET_KEYWORD_GEOJSON_2 GEOJSON_2
+DEFAULT_MACRO DATASET_KEYWORD_GEOJSON_3 GEOJSON_3
+# -------------------------------------------------------------------------
+
+ch.ehi.fme.Main_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ch.ehi.fme.Main_1_COORDINATE_SYSTEM CH1903Plus_1.LV95/01
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME ITF_CH_to_GEOJSON
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+ch.ehi.fme.Main_1_DEF MD01MOCH24MN95F.Points_fixesCategorie1.PFP1   xtf_id                       xtf_char(200)   Origine                      xtf_char(200)   IdentDN                      xtf_char(12)   Numero                       xtf_char(12)   GeomAlt                      xtf_decimal(8,3)   PrecPlan                     xtf_decimal(5,1)   FiabPlan                     xtf_char(255)   PrecAlt                      xtf_decimal(5,1)   FiabAlt                      xtf_char(255)   Accessibilite                xtf_char(255)   Signe                        xtf_char(255)
+# -------------------------------------------------------------------------
+ch.ehi.fme.Main_1_DEF MD01MOCH24MN95F.Points_fixesCategorie3.PFP3   xtf_id                       xtf_char(200)   Origine                      xtf_char(200)   IdentDN                      xtf_char(12)   Numero                       xtf_char(12)   GeomAlt                      xtf_decimal(8,3)   PrecPlan                     xtf_decimal(5,1)   FiabPlan                     xtf_char(255)   PrecAlt                      xtf_decimal(5,1)   FiabAlt                      xtf_char(255)   Signe                        xtf_char(255)   Fiche                        xtf_char(255)
+# -------------------------------------------------------------------------
+ch.ehi.fme.Main_1_DEF MD01MOCH24MN95F.Points_fixesCategorie2.PFA2   xtf_id                       xtf_char(200)   Origine                      xtf_char(200)   IdentDN                      xtf_char(12)   Numero                       xtf_char(12)   GeomAlt                      xtf_decimal(8,3)   PrecPlan                     xtf_decimal(5,1)   FiabPlan                     xtf_char(255)   PrecAlt                      xtf_decimal(5,1)   FiabAlt                      xtf_char(255)
+# -------------------------------------------------------------------------
+ch.ehi.fme.Main_1_DEF MD01MOCH24MN95F.Points_fixesCategorie3.PFA3   xtf_id                       xtf_char(200)   Origine                      xtf_char(200)   IdentDN                      xtf_char(12)   Numero                       xtf_char(12)   GeomAlt                      xtf_decimal(8,3)   PrecPlan                     xtf_decimal(5,1)   FiabPlan                     xtf_char(255)   PrecAlt                      xtf_decimal(5,1)   FiabAlt                      xtf_char(255)
+# -------------------------------------------------------------------------
+ch.ehi.fme.Main_1_DEF MD01MOCH24MN95F.Points_fixesCategorie1.PFA1   xtf_id                       xtf_char(200)   Origine                      xtf_char(200)   IdentDN                      xtf_char(12)   Numero                       xtf_char(12)   GeomAlt                      xtf_decimal(8,3)   PrecPlan                     xtf_decimal(5,1)   FiabPlan                     xtf_char(255)   PrecAlt                      xtf_decimal(5,1)   FiabAlt                      xtf_char(255)
+# -------------------------------------------------------------------------
+ch.ehi.fme.Main_1_DEF MD01MOCH24MN95F.Points_fixesCategorie2.PFP2   xtf_id                       xtf_char(200)   Origine                      xtf_char(200)   IdentDN                      xtf_char(12)   Numero                       xtf_char(12)   GeomAlt                      xtf_decimal(8,3)   PrecPlan                     xtf_decimal(5,1)   FiabPlan                     xtf_char(255)   PrecAlt                      xtf_decimal(5,1)   FiabAlt                      xtf_char(255)   Accessibilite                xtf_char(255)   Signe                        xtf_char(255)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_ch.ehi.fme.Main_1)   INPUT FEATURE_TYPE *    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::MD01MOCH24MN95F.Points_fixesCategorie1.PFP1 multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::MD01MOCH24MN95F.Points_fixesCategorie1.PFP1 ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::MD01MOCH24MN95F.Points_fixesCategorie3.PFP3 multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::MD01MOCH24MN95F.Points_fixesCategorie3.PFP3 ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::MD01MOCH24MN95F.Points_fixesCategorie2.PFA2 multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::MD01MOCH24MN95F.Points_fixesCategorie2.PFA2 ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::MD01MOCH24MN95F.Points_fixesCategorie3.PFA3 multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::MD01MOCH24MN95F.Points_fixesCategorie3.PFA3 ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::MD01MOCH24MN95F.Points_fixesCategorie1.PFA1 multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::MD01MOCH24MN95F.Points_fixesCategorie1.PFA1 ALIAS_GEOMETRY    ROUTE ch.ehi.fme.Main ch.ehi.fme.Main_1::MD01MOCH24MN95F.Points_fixesCategorie2.PFP2 multi_reader_keyword,$(DATASET_KEYWORD_ch.ehi.fme.Main_1) TO FME_GENERIC ::MD01MOCH24MN95F.Points_fixesCategorie2.PFP2 ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::MD01MOCH24MN95F.Points_fixesCategorie1.PFP1 EXACT MD01MOCH24MN95F.Points_fixesCategorie1.PFP1
+ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::MD01MOCH24MN95F.Points_fixesCategorie3.PFP3 EXACT MD01MOCH24MN95F.Points_fixesCategorie3.PFP3
+ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::MD01MOCH24MN95F.Points_fixesCategorie2.PFA2 EXACT MD01MOCH24MN95F.Points_fixesCategorie2.PFA2
+ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::MD01MOCH24MN95F.Points_fixesCategorie3.PFA3 EXACT MD01MOCH24MN95F.Points_fixesCategorie3.PFA3
+ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::MD01MOCH24MN95F.Points_fixesCategorie1.PFA1 EXACT MD01MOCH24MN95F.Points_fixesCategorie1.PFA1
+ch.ehi.fme.Main_1_MERGE_DEF ch.ehi.fme.Main_1::MD01MOCH24MN95F.Points_fixesCategorie2.PFP2 EXACT MD01MOCH24MN95F.Points_fixesCategorie2.PFP2
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24MN95F.Points_fixesCategorie2.PFP2_ch.ehi.fme.Main_1 Splitter"    INPUT FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie2.PFP2    OUTPUT FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie2.PFP2_ch.ehi.fme.Main_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24MN95F.Points_fixesCategorie1.PFP1_ch.ehi.fme.Main_1 Splitter"    INPUT FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie1.PFP1    OUTPUT FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie1.PFP1_ch.ehi.fme.Main_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24MN95F.Points_fixesCategorie1.PFA1_ch.ehi.fme.Main_1 Splitter"    INPUT FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie1.PFA1    OUTPUT FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie1.PFA1_ch.ehi.fme.Main_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24MN95F.Points_fixesCategorie3.PFA3_ch.ehi.fme.Main_1 Splitter"    INPUT FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie3.PFA3    OUTPUT FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie3.PFA3_ch.ehi.fme.Main_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24MN95F.Points_fixesCategorie3.PFP3_ch.ehi.fme.Main_1 Splitter"    INPUT FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie3.PFP3    OUTPUT FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie3.PFP3_ch.ehi.fme.Main_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "MD01MOCH24MN95F.Points_fixesCategorie2.PFA2_ch.ehi.fme.Main_1 Splitter"    INPUT FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie2.PFA2    OUTPUT FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie2.PFA2_ch.ehi.fme.Main_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_3 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie2.PFA2_ch.ehi.fme.Main_1    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "Type" "SET_TO" "PFA2" }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_6 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie3.PFP3_ch.ehi.fme.Main_1    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "Type" "SET_TO" "PFP3" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_6_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_3 }    INPUT  FEATURE_TYPE AttributeCreator_6_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "xtf_id" "xtf_id" "" "REMOVE" }      ATTR_ACTION { "Origine" "Origine" "" "REMOVE" }      ATTR_ACTION { "Fiche" "Fiche" "" "REMOVE" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_3_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} SortFactory    FACTORY_NAME { Sorter_3 }    INPUT  FEATURE_TYPE AttributeManager_3_OUTPUT    SORT_ALPHA_AS_UTF8 { YES }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    SORT_BY { Numero NATURAL ASCENDING }    OUTPUT { SORTED FEATURE_TYPE Sorter_3_SORTED          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_5 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie3.PFA3_ch.ehi.fme.Main_1    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "Type" "SET_TO" "PFA3" }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie1.PFA1_ch.ehi.fme.Main_1    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "Type" "SET_TO" "PFA1" }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_2 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie1.PFP1_ch.ehi.fme.Main_1    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "Type" "SET_TO" "PFP1" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager }    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "xtf_id" "xtf_id" "" "REMOVE" }      ATTR_ACTION { "Origine" "Origine" "" "REMOVE" }      ATTR_ACTION { "Fiche" "Fiche" "" "REMOVE" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} SortFactory    FACTORY_NAME { Sorter }    INPUT  FEATURE_TYPE AttributeManager_OUTPUT    SORT_ALPHA_AS_UTF8 { YES }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    SORT_BY { Numero NATURAL ASCENDING }    OUTPUT { SORTED FEATURE_TYPE Sorter_SORTED          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_4 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE MD01MOCH24MN95F.Points_fixesCategorie2.PFP2_ch.ehi.fme.Main_1    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "Type" "SET_TO" "PFP2" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_2 }    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "xtf_id" "xtf_id" "" "REMOVE" }      ATTR_ACTION { "Origine" "Origine" "" "REMOVE" }      ATTR_ACTION { "Fiche" "Fiche" "" "REMOVE" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_2_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} SortFactory    FACTORY_NAME { Sorter_2 }    INPUT  FEATURE_TYPE AttributeManager_2_OUTPUT    SORT_ALPHA_AS_UTF8 { YES }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    SORT_BY { Numero NATURAL ASCENDING }    OUTPUT { SORTED FEATURE_TYPE Sorter_2_SORTED          }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Sorter_3_SORTED TO GEOJSON __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>pfp3<closeparen> GEOMETRY    ROUTE FME_GENERIC Sorter_SORTED TO GEOJSON __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>pfp1<closeparen> GEOMETRY    ROUTE FME_GENERIC Sorter_2_SORTED TO GEOJSON __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>pfp2<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+GEOJSON_1_DEF pfp1   IdentDN                      string   Numero                       string   GeomAlt                      float   PrecPlan                     float   FiabPlan                     string   PrecAlt                      float   FiabAlt                      string   Accessibilite                string   Signe                        string   Type                         string
+# -------------------------------------------------------------------------
+GEOJSON_2_DEF pfp2   IdentDN                      string   Numero                       string   GeomAlt                      float   PrecPlan                     float   FiabPlan                     string   PrecAlt                      float   FiabAlt                      string   Accessibilite                string   Signe                        string   Type                         string
+# -------------------------------------------------------------------------
+GEOJSON_3_DEF pfp3   IdentDN                      string   Numero                       string   GeomAlt                      float   PrecPlan                     float   FiabPlan                     string   PrecAlt                      float   FiabAlt                      string   Accessibilite                string   Signe                        string   Type                         string
